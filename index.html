@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Câmbio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          <br>
+          <br>
+        </h1>
+        <img src="imagens/euro.jpg" class="page-logo" alt="">
+        <img src="imagens/dolar.png" class="page-logo" alt="">
+        <img src="imagens/libra.jpg" class="page-logo" alt="">
+    </div>
+
+    <div class="converter">
+        <h1>Conversor de moeda</h1>
+        <h2>Insira um valor em reais:</h2>
+        <input type="number" id="valor" name="valor" min="0">
+        
+    
+        <h3>Selecione a moeda para conversão</h3>
+    
+        <select id="moeda">
+          <option value="USD">Dólar americano</option>
+          <option value="EUR">Euro</option>
+          <option value="GPB">Libra esterlina</option>
+        </select>
+    
+        <button onclick="converter()">Converter</button>
+        <p id="resultado"></p>
+      </div>
+
+    <footer>
+        <p>© 2023 Felipe Sales. Todos os direitos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
